@@ -27,7 +27,7 @@ $request->setHeaders(array(
 ));
 
 $request->setBody('{
-  "criteria": {"siteName": '.$site.' },
+  "criteria": {"siteName": "'.$site.'" },
   "fields":["parentEnterpriseUnitId"]
 }');
 
