@@ -36,6 +36,7 @@ try {
   $result = $request->send();
   $json = json_decode($result);
   $storeid = $json->pageContent->id;
+	$speech = "hey ".$storeid;
   //$check = $json->pageContent;
   //echo $result->getBody(); //// TODO: remove later
   /*if($check==""){
@@ -49,8 +50,8 @@ try {
 }
 
 	$response = new \stdClass();
-	$response->speech = $storeid;
-	$response->displayText = $storeid;
+	$response->speech = $speech;
+	$response->displayText = $speech;
 	$response->source = "webhook";
 	echo json_encode($response);
 }
