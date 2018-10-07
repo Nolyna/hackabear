@@ -32,10 +32,10 @@ $request->setBody('{
 }');
 
 try {
-  $response = $request->send();
+  $result = $request->send();
   //$json = json_decode($response);
   //$check = $json->pageContent;
-  echo $response->getBody(); //// TODO: remove later
+  echo $result->getBody(); //// TODO: remove later
   /*if($check==""){
     $speech -> " I am sorry, I can't find this store ";
   }else{
