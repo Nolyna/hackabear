@@ -33,7 +33,7 @@ $request->setBody('{
 }');
 
 try {
-  $result = $request->send();
+  $result = $request->send()->getBody();
   $json = json_decode($result);
   $storeid = $json->pageContent->id;
 	$speech = "hey ".$storeid;
