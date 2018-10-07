@@ -36,11 +36,11 @@ try {
   $json = json_decode($response);
   $check = $json->pageContent;
   echo $response->getBody(); //// TODO: remove later
-  if($check==""){
+  /*if($check==""){
     $speech -> " I am sorry, I can't find this store ";
   }else{
       $storeid = $json->pageContent->id;
-  }
+  }*/
 
 } catch (HttpException $ex) {
   echo $ex;
