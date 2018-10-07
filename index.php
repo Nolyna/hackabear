@@ -10,7 +10,7 @@ if($method == 'POST'){
   $product = $json->queryResult->parameters->given-product;
   $site = $json->queryResult->parameters->given-store;
 
-  $speech = 'you are looking for ';
+  $speech = 'you are looking for '.$product;
 
 	$response = new \stdClass();
 	$response->speech = $speech;
