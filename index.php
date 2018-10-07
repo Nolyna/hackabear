@@ -1,6 +1,6 @@
 <?php
 
-$method = $_SERVER['REQUEST_METHOD'];
+/*$method = $_SERVER['REQUEST_METHOD'];
 
 // Process only when method is POST
 if($method == 'POST'){
@@ -46,11 +46,11 @@ try {
   echo $ex;
 }
 
-	$response = new \stdClass();
+	/*$response = new \stdClass();
 	$response->speech = $speech;
 	$response->displayText = $speech;
 	$response->source = "webhook";
-	echo json_encode($response);
+	echo json_encode($response);*/
 }
 else
 {
