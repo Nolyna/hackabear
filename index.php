@@ -45,9 +45,9 @@ try {
       $storeid = $json->pageContent->id;
   }*/
 
-} catch (HttpException $ex) {
+/*} catch (HttpException $ex) {
   echo $ex;
-}
+}*/
 
 	$response = new \stdClass();
 	$response->speech = $speech;
