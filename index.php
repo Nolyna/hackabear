@@ -50,7 +50,7 @@ try {
 
 	$response = new \stdClass();
 	$response->speech = $storeid;
-	$response->displayText = $speech;
+	$response->displayText = $storeid;
 	$response->source = "webhook";
 	echo json_encode($response);
 }
