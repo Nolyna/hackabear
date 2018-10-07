@@ -7,7 +7,7 @@ if($method == 'POST'){
 	$requestBody = file_get_contents('php://input');
 	$json = json_decode($requestBody);
 
-  $product = $json->queryResult->parameters->given_product;
+  $product = $json->queryResult->parameters->any;
   $site = $json->queryResult->parameters->given_store;
 
   $speech = 'you are looking for '.$product;
