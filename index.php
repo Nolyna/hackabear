@@ -34,9 +34,10 @@ $request->setBody('{
 
 try {
   $result = $request->send();
-  //$json = json_decode($result);
+  $json = json_decode($result);
+  $storeid = $json->pageContent->id;
   //$check = $json->pageContent;
-  echo $result->getBody(); //// TODO: remove later
+  //echo $result->getBody(); //// TODO: remove later
   /*if($check==""){
     $speech -> " I am sorry, I can't find this store ";
   }else{
@@ -47,11 +48,11 @@ try {
   echo $ex;
 }
 
-	/*$response = new \stdClass();
-	$response->speech = $speech;
+	$response = new \stdClass();
+	$response->speech = $storeid;
 	$response->displayText = $speech;
 	$response->source = "webhook";
-	echo json_encode($response);*/
+	echo json_encode($response);
 }
 else
 {
