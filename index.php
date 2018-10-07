@@ -32,7 +32,7 @@ $request->setBody('{
   "fields":["parentEnterpriseUnitId"]
 }');
 
-try {
+/*try {*/
   $result = $request->send()->getBody();
   $json = json_decode($result);
   $storeid = $json->pageContent->id;
