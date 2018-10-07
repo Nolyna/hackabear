@@ -33,8 +33,8 @@ $request->setBody('{
 
 try {
   $response = $request->send();
-  $json = json_decode($response);
-  $check = $json->pageContent;
+  //$json = json_decode($response);
+  //$check = $json->pageContent;
   echo $response->getBody(); //// TODO: remove later
   /*if($check==""){
     $speech -> " I am sorry, I can't find this store ";
