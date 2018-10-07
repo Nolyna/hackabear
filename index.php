@@ -13,7 +13,7 @@ if($method == 'POST'){
   $speech = 'you are looking for '.$product;
 
 /* get store info */
-$site = "test";
+$site = "suburban*";
 $request = new HttpRequest();
 $request->setUrl('https://gateway-staging.ncrcloud.com/site/sites/find-by-criteria');
 $request->setMethod(HTTP_METH_POST);
