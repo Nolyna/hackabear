@@ -34,7 +34,7 @@ $request->setBody('{
 
 try {
   $result = $request->send();
-  //$json = json_decode($response);
+  //$json = json_decode($result);
   //$check = $json->pageContent;
   echo $result->getBody(); //// TODO: remove later
   /*if($check==""){
